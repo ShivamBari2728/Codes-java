@@ -1,3 +1,6 @@
+//      To Find Floor number of given number in array
+
+
 public class GreatestSmallerNumber {
     public static void main(String[] args)
     {
