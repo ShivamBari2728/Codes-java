@@ -1,4 +1,3 @@
-import java.lang.annotation.Target;
 
 public class FirstAndLastOccurence {
     public static void main(String[] args) {
