@@ -6,7 +6,7 @@ public class Bubble_Shorting {
         {
             for (int j=1;j<=end;j++)
             {
-                if(a[j]<a[j-1])
+                if(a[j]<a[j-1])    //Swap if the number is smaller then previous number...
                 {
                     int temp=0;
                     temp = a[j];
