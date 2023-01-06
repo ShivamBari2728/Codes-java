@@ -33,7 +33,7 @@ public class Bubble_Shorting {
         System.out.println();
     }
     public static void main(String[] args) {
-    int[] arr={1,2,3,4};
+    int[] arr={8,2,4,6,7};
     System.out.print("Orignal unsorted array is :- ");
     
     for(int i =0;i<=arr.length-1;i++) //Printing orignal array..
