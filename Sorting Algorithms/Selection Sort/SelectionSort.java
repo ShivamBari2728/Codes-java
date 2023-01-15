@@ -16,9 +16,10 @@ public class SelectionSort
         
         for (int i=0;i<arr.length;i++) 
         {
-           int end=arr.length-1-i;
-           int max= findmax(arr,end);
-           swap(arr,end,max);
+            System.out.println("Step "+(i)+Arrays.toString(arr));
+           int end=arr.length-1-i;    //reducing length of array be 1...
+           int max= findmax(arr,end); // Finding maximum element in reduced array...
+           swap(arr,end,max);         //Swap the max element with last element in reduced array
            
         }
         
