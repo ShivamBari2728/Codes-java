@@ -1,11 +1,13 @@
 import java.util.Arrays;
 
+// Question:- Find the missing number between 0 to N.
+
 public class FindingTheMissingNumber {
     public static void main(String[] args) {
-        int[] arr={4,1,0,2};  //for arr 1 to n only...
+        int[] arr={4,1,0,2};
         sort(arr);
         int missingno= findingmissing(arr);
-        //System.out.println(ans);
+        
         System.out.println("\nSorted array is "+Arrays.toString(arr));
         System.out.println("\nThe missing number is " +missingno);
     }
@@ -14,7 +16,7 @@ public class FindingTheMissingNumber {
         int i=0;
         int N= (arr.length);
         while (i<arr.length)
-        { 
+        {   
             int temp=(arr[i]);
             if(arr[i]==N)
             {
@@ -22,19 +24,16 @@ public class FindingTheMissingNumber {
             }
             else
             {
-            if(arr[i]!=arr[temp]) 
-            {
-
-                swap(i,arr);
-            }
-            else
-            {
-                i++;
-            }
+                if(arr[i]!=arr[temp]) 
+                {
+                    swap(i,arr);
+                }
+                else
+                {
+                    i++;
+                }
             }    
-        }
-        
-        
+        }    
     }
     static void swap(int i,int[] arr)
     {
@@ -45,16 +44,13 @@ public class FindingTheMissingNumber {
     }
     static int findingmissing(int[] arr)
     {
-        
         for(int i=0;i<arr.length;i++)
         {
             if(arr[i]!= i)
             {
                 return i;
-            }
-            
+            }     
         }
         return arr.length;
-    }
-    
+    }   
 }
