@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Cyclic_Sort {
     public static void main(String[] args) {
-        int[] arr={4,3,1,2};  //for arr 1 to n only...
+        int[] arr={4,1,0,2,3};  //for arr 1 to n only...
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -11,9 +11,9 @@ public class Cyclic_Sort {
         int i=0;
         while (i<arr.length)
         { 
-            int temp=0;
-            temp=arr[i];
-            if(arr[i]!=arr[temp-1])
+            int temp=(arr[i]);
+            
+            if(arr[i]!=arr[temp]) 
             {
 
                 swap(i,arr);
