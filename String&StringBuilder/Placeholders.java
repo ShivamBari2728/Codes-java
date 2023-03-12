@@ -4,7 +4,7 @@ public class Placeholders {
         System.out.println("Orignal value is " + a);
         System.out.printf("Formated value is %3f \n",a);
         System.out.printf("Hi my name is %s and i am a %s student. i am in %d nd year.\n","Shivam","BscIT",2);
-    }
+    } 
     /* 
     1. %d: Placeholder for integer values
     2. %f: Placeholder for floating-point values (float and double)
