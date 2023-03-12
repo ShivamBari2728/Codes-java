@@ -28,8 +28,8 @@ public class Cyclic_Sort {
     static void swap(int i,int[] arr)
     {
         int temp=arr[i];
-        arr[i]=arr[temp-1];
-        arr[temp-1]=temp;
+        arr[i]=arr[temp];
+        arr[temp]=temp;
 
     }
 }
