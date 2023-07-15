@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MergeShort {
+public class MergeSort {
     public static void main(String[] args) {
         int[] arr={5,2,1,8,9,3,0};
         int[] ans = Merge_Short(arr);
