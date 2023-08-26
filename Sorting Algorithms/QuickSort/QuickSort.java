@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] array={7,1,5,2,9,0};
+        int[] array={7,1,5,2,9,0,4};
         Quick_Sort(array, 0, array.length-1);
         System.out.println(Arrays.toString(array));
 
@@ -10,6 +10,7 @@ public class QuickSort {
     }
     public static void Quick_Sort(int[]arr,int low,int high)
     {
+        
         if(low>=high)
         {
             return;
@@ -38,6 +39,7 @@ public class QuickSort {
             s++;
             e--;
         }
+        
         
     }
     Quick_Sort(arr, low,e);
