@@ -116,14 +116,35 @@ class LinkListEx {
         System.out.println("Size of list is " +size);
     }
 
+    //Displaying Elements at specific index.
+    public void get(int index)
+    {
+        int size1=1;
+        Node currNode = head;
+        while (currNode!= null) {
+            if(size1!=index){
+                currNode = currNode.Next;
+                size1++;
+            }
+            else if(size1==index)
+            {
+                System.out.println("The Element at index "+size1+" is "+currNode.Data);
+                return;
+            }
+                     
+        }
+        System.out.println("Index does not exist");
+
+    }
+
     public static void main(String[] args) {
         LinkListEx List = new LinkListEx();
         List.AddFirst(" NAME IS "); 
         List.AddFirst(" My "); 
         List.AddLast(" Shivam ");
+        List.PrintList();
         List.Size();
-        List.DeleteLast();
-        List.Size();
+        List.get(2);
          
 
     }
